@@ -1,10 +1,11 @@
+// vite.config.js
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  base: '/CehSim/',
+  base: '/CehSim/', // <<< 👈 this must match your GitHub repo name exactly
   build: {
-    outDir: 'docs', // 👈 put build files into /docs instead of /dist
+    outDir: 'docs' // <<< GitHub Pages only lets you choose /docs or /(root)
   },
-  plugins: [react()],
+  plugins: [react()]
 })
